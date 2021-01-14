@@ -4,7 +4,7 @@ Demo for Country data analytics
 A SpringBoot webApp managing countrie data (Buys & Sells)
 
 ## Class Diagram
-![Class Diagram](https://ibb.co/f8xySTF)
+![analytics class diagram](https://github.com/Anasss/analytics/blob/main/class-diagram.png)
 
 
 ## Tech stack

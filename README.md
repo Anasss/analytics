@@ -1,4 +1,6 @@
 # Analytics
+[![Build Status](https://travis-ci.com/Anasss/analytics.svg?branch=main)](https://travis-ci.com/Anasss/analytics)
+
 Demo for Country data analytics
 
 A SpringBoot webApp managing countries data.

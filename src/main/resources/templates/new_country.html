@@ -2,17 +2,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="utf-8" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="../static/css/analytics-custom.css" rel="stylesheet"/>
+
     <title>Add a Country</title>
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <div align="center">
-    <h1>Add a new Country</h1>
+    <br>
+    <h2>Add a new Country</h2>
     <br />
     <form action="#" th:action="@{/save}" th:object="${country}"
           method="post">
 
-        <table border="0" cellpadding="10">
+        <table class="table table-md" border="0" cellpadding="10">
             <tr>
                 <td>Name:</td>
                 <td><input type="text" th:field="*{common_name}" /></td>
@@ -26,7 +35,7 @@
                 <td><input type="text" th:field="*{sells}" /></td>
             </tr>
             <tr>
-                <td colspan="2"><button type="submit">Save</button> </td>
+                <td colspan="2"><button class="btn btn-outline-primary"type="submit">Save</button> </td>
             </tr>
         </table>
     </form>

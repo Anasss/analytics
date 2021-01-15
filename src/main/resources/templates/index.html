@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="utf-8"/>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Cogendi Analytics</title>
 </head>
 <body>
-<div align="center">
-    <h1>Country List</h1>
-    <a href="/new">Create a New Country</a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<div id="countryHeader" class="container col-8">
+    <br/>
+    <h2>Country List</h2>
+    <a href="/new" class="btn btn-outline-primary" role="button">Add a Country</a>
     <br/><br/>
-    <table border="1" cellpadding="10">
+</div>
+<div class="container">
+    <div class="row col-4">
+    <table class="table" border="1" cellpadding="10">
         <thead>
-        <tr>
-            <th>Country</th>
-            <th>Buys</th>
-            <th>Sells</th>
+        <tr class="d-flex">
+            <th  class="table-primary col-4" scope="col">Country</th>
+            <th class="table-primary col-4" scope="col">Buys</th>
+            <th class="table-primary col-4" scope="col">Sells</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="country : ${countries}">
-            <td th:text="${country.common_name}">Country</td>
-            <td th:text="${country.buys}">Buys</td>
-            <td th:text="${country.sells}">Sells</td>
-            <td>
-                <a th:href="@{'/edit/' + ${country.id}}">Edit</a>
+        <tr class="d-flex" th:each="country : ${countries}">
+            <td class="col-4" scope="row" th:text="${country.common_name}">Country</td>
+            <td class="col-4" scope="row" th:text="${country.buys}">Buys</td>
+            <td class="col-4" tscope="row" th:text="${country.sells}">Sells</td>
+            <td class="col-2" tscope="row">
+                <a th:href="@{'/edit/' + ${country.id}}" class="btn btn-outline-primary btn-sm" role="button">Edit</a>
             </td>
         </tr>
         </tbody>
     </table>
+    </div>
 </div>
 </body>
 </html>

@@ -21,3 +21,8 @@ A SpringBoot webApp managing countries data.
 * Lombock
 * Maven
 * ThymeLeaf
+* Bootstrap
+* H2 DB
+
+## Demo
+![ui screenshot](https://github.com/Anasss/analytics/blob/main/ui-screenshot.png)

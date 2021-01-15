@@ -1,4 +1,4 @@
-# Analytics
+# Country Analytics :chart_with_upwards_trend:
 [![Build Status](https://travis-ci.com/Anasss/analytics.svg?branch=main)](https://travis-ci.com/Anasss/analytics)
 
 Demo for Country data analytics

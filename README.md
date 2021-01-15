@@ -12,7 +12,7 @@ A SpringBoot webApp managing countries data.
     * Optional: create one or two charts to visualise the entered data
 
 ## Class Diagram
-![analytics class diagram](https://github.com/Anasss/analytics/blob/main/class-diagram.png)
+![analytics class diagram](https://github.com/Anasss/analytics/blob/main/screenshots/class-diagram.png)
 
 
 ## Tech stack
@@ -25,4 +25,4 @@ A SpringBoot webApp managing countries data.
 * H2 DB
 
 ## Demo
-![ui screenshot](https://github.com/Anasss/analytics/blob/main/ui-screenshot.png)
+![ui screenshot](https://github.com/Anasss/analytics/blob/main/screenshots/ui-screenshot.png)

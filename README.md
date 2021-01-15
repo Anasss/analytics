@@ -1,9 +1,7 @@
 # Country Analytics :chart_with_upwards_trend:
 [![Build Status](https://travis-ci.com/Anasss/analytics.svg?branch=main)](https://travis-ci.com/Anasss/analytics)
 
-Demo for Country data analytics
-
-A SpringBoot webApp managing countries data.
+A sample SpringBoot webApp managing countries data.
 
 ## How to build and run from sources?
 

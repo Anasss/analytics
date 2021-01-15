@@ -5,6 +5,30 @@ Demo for Country data analytics
 
 A SpringBoot webApp managing countries data.
 
+## How to build and run from sources?
+
+* Clone the repository:
+
+```
+git clone https://github.com/Anasss/analytics.git 
+
+```
+
+* Install dependencies:
+
+```
+cd analytics
+mvn install
+
+```
+
+* Running the app:
+
+```
+mvn spring-boot:run
+
+```
+
 ## Functional description
 * Create a server that returns an html page with an empty table, having 3 colmns (see table on the left)
 * Add a form (or anything else) that alows the user to add an entry into the table
